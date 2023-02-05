@@ -1,61 +1,22 @@
+@section('content')
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">Nuestros proyectos</h1>
+        </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quiénes somos</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus veniam quod tempore totam repudiandae consequatur aspernatur? Cumque dolores adipisci ipsam, nobis ullam porro, reiciendis placeat voluptate, architecto ex sint? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ullam mollitia sed. Quia maxime adipisci cum iure. Recusandae, nesciunt ipsam, possimus deserunt adipisci numquam officiis magni, illum autem quibusdam laborum?</p>
+        </div>
     
+    
+    </div>   
 
-    <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{{ route('welcome') }}">Telnet Group ® </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="{{ route('identidad') }}">¿Quiénes somos?</a>
-                <a class="nav-item nav-link active" href="{{ route('mision') }}" >Misión</a>
-                <a class="nav-item nav-link" href="#">Visión</a>
-                <a class="nav-item nav-link disabled" href="#">Contáctanos</a>
-                <a class="nav-item nav-link disabled" href="#">Ayuda</a>
-              </div>
-            </div>
-            
-          </nav>
-        </div>
+@stop
 
-    <section class="content container-fluid">
-        <div class="jumbotron">
-            <h1 class="display-4" style="color: rgb(13, 13, 14)">Sobre nosotros</h1>
-            <hr class="my-4">
-            <p align="justify" style="color: rgba(30, 87, 134, 0.87)"> Somos una empresa de software conformada por un equipo interdisciplinario de profesionales dedicada al diseño, desarrollo e implementación de soluciones de gestión para PyMEs.
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
 
-                Nuestro objetivo es ser parte activa del crecimiento de su empresa, contribuyendo con nuestros productos y experiencia <br>
-                
-                En Telnet Systems brindamos herramientas ideadas para potenciar la gestión administrativa de negocios y empresas</p>
-
-            
-
-            
-          <center><img style="width:30%" alt="ERROR 404" src="vendor/adminlte/dist/img/telnet.jpeg" /></center>
-          <a class="btn btn-info btn" href="{{ route('welcome') }}" role="button">Regresar</a>
-
-        </div>
-
-          
-
-        
-    </section>
-
-</body>
-</html>
+@section('js')
+    <script> console.log('Hi!'); </script>
+@stop
