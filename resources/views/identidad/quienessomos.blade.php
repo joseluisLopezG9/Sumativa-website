@@ -22,15 +22,14 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="{{ route('identidad') }}">¿Quiénes somos?</a>
-                <a class="nav-item nav-link active" href="{{ route('mision') }}" >Misión</a>
-                <a class="nav-item nav-link" href="#">Visión</a>
-                <a class="nav-item nav-link disabled" href="#">Contáctanos</a>
-                <a class="nav-item nav-link disabled" href="#">Ayuda</a>
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="{{ route('identidad') }}">¿Quiénes somos?</a>
+                  <a class="nav-item nav-link active" href="{{ route('mision') }}">Misión</a>
+                  <a class="nav-item nav-link active" href="{{ route('vision') }}">Visión</a>    
+                  <a class="nav-item nav-link active" href="{{ route('contacto') }}">Contáctanos</a>
+                  <a class="nav-item nav-link active" href="{{ route('ayuda') }}">Ayuda</a>
+                </div>
               </div>
-            </div>
-            
           </nav>
         </div>
 

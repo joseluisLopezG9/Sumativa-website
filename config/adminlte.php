@@ -312,24 +312,24 @@ return [
         ],
         [
             'text' => 'Usuarios',
-            'url'  => 'admin/settings',
+            'route'  => 'usuarios.create',
             'icon' => 'fas fa-users',
         ],
         ['header' => 'account_settings'],
         [
             'text' => 'Perfil',
-            'url'  => 'admin/settings',
+            'route'  => 'error404',
             'icon' => 'fas fa-user-tie',
         ],
         [
             'text' => 'Cambiar  contraseña',
-            'url'  => 'admin/settings',
+            'route'  => 'error404',
             'icon' => 'fas fa-unlock-alt',
         ],
         ['header' => 'labels'],
         [
             'text' => 'Configuración de la cuenta',
-            'url'  => 'admin/settings',
+            'route'  => 'error404',
             'icon' => 'fas fa-cogs',
         ],
         
@@ -372,21 +372,21 @@ return [
 
     'plugins' => [
         'Datatables' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
-                    'asset' => false,
+                    'asset' => true,
                     'location' => '//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js',
                 ],
                 [
                     'type' => 'js',
-                    'asset' => false,
+                    'asset' => true,
                     'location' => '//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js',
                 ],
                 [
                     'type' => 'css',
-                    'asset' => false,
+                    'asset' => true,
                     'location' => '//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css',
                 ],
             ],

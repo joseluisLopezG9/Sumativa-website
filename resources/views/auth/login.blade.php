@@ -171,14 +171,14 @@ body{
             <br>
 
             <div class="mb-3">
-              <button type="submit" class="btn btn-block text-uppercase btn btn-danger">
+              <button type="submit" class="btn btn-block text-uppercase btn btn-primary">
               {{ __('Iniciar sesión') }}
               </button>
             </div>
 
             <div class="text-right">
             @if (Route::has('welcome'))
-            <a type="submit" class="btn btn-block text-uppercase btn btn-success" href="{{ route('welcome') }}">
+            <a type="submit" class="btn btn-block text-uppercase btn btn-danger" href="{{ route('welcome') }}">
               {{ __('Cancelar') }}
             </a>  
             @endif

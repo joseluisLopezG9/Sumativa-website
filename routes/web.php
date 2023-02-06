@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\identidadController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\UsuarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,12 +40,11 @@ Route::get('identidad.contactanos', [App\Http\Controllers\IdentidadController::c
 
 Route::get('identidad.ayuda', [App\Http\Controllers\IdentidadController::class, 'ayuda'])->name('ayuda');
 
+Route::resource('/usuarios', App\Http\Controllers\UsuarioController::class);
 
 Route::get('/welcome', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 
-
-
-
+Route::get('/error', [App\Http\Controllers\UsuarioController::class, 'error'])->name('error404');
 
 
 
